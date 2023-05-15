@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+     .container{
+background-color: #c2bfd6;
+border: 3px solid rgb(46, 44, 44);
+font-size: x-large;
+font-style: oblique;
+/* padding/Margin:top,right,bottom ,left*/
+padding: 30px 12px 30px 12px;
+margin: 10px 20px 30px 40px;
+border-radius: 23px;
+height: 300px;
+width: 300px;
+box-sizing:content-box;
+     }
+h3{
+    margin-block:inherit;
+}
+body{
+    background-color: rgb(192, 168, 213);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3> 
+
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi, id deleniti sit quo neque maxime error est. Quod cupiditate non animi assumenda libero ratione ipsum obcaecati! Voluptates, dolor repellendus.</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is my heading</h3> 
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi, id deleniti sit quo neque maxime error est. Quod cupiditate non animi assumenda libero ratione ipsum obcaecati! Voluptates, dolor repellendus.</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is my heading</h3> 
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi, id deleniti sit quo neque maxime error est. Quod cupiditate non animi assumenda libero ratione ipsum obcaecati! Voluptates, dolor repellendus.</p>
+    </div>
+</body>
+</html>
