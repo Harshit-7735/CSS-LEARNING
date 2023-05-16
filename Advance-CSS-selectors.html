@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS selectors</title>
+    <style>
+h1{
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+/* Here p is under the div so it will select all the p which is written under p */
+ /* div p{
+    color: yellow;
+    font-weight: bold;
+    background-color: red;
+} */
+
+/* But if we want to interact with the direct child inside parent we can do this */
+/* div > p{
+    color: yellow;
+    font-weight: bold;
+    background-color: red;
+} */
+/* But if we want whose previous property is div so apply css only to those we can use  */
+/* div + p{
+    background-color: aqua;
+    color: black;
+} */
+    </style>
+</head>
+<body>
+ <h1>This is more on selectors</h1>   
+ <div class="container">
+    <div class="row">
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is another paragraph</p>
+ </div>
+ <!-- The outermost p will not get selected  -->
+ <p>This is outermost paragraph</p>
+</body>
+</html>
