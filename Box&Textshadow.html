@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card
+        {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* (box-shadow: offset-x offset-y color) */
+            box-shadow: 10px 13px  green;
+            /* (offset-x offset-y blur-radius color) */
+            box-shadow: 10px 13px 10px green;
+            /* (offset-x offset-y blur-radius spread-radius color) */
+            box-shadow: 10px 13px 10px 30px green;
+            /* If want color inside the box */
+box-shadow: inset 10px 49px green;
+/* For multiple box-shadows*/
+box-shadow: 10px 13px, 10px 30px green;
+            background-color: aqua;
+        }
+        .card h1{
+            text-shadow: 2px 3px 2px rgb(255, 255, 255);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h1>This is C++ course</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dignissimos voluptatem nemo possimus tempore tempora repellat quae pariatur accusantium fuga tenetur numquam minus repudiandae dolores aspernatur porro iste laboriosam! Reiciendis.</p>
+      </div>
+
+      <div class="card" id="card2">
+        <h1>This is HTML course</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique maiores beatae quaerat itaque, a dicta distinctio aperiam voluptas assumenda illum, doloribus praesentium, quas veritatis? Corrupti repellendus culpa numquam natus doloribus?</p>
+    </div>
+
+      <div class="card" id="card3">
+        <h1>This is CSS course</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quasi beatae eos nisi sit atque quaerat at hic itaque pariatur vel odit modi ad debitis consequuntur inventore, impedit tempore earum!</p>
+    </div>
+
+    </div>
+  </body>
+</html>
